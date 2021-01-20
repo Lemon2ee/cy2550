@@ -1,0 +1,18 @@
+[0m[1;31m                          ./+o+-      [0m[1;31m root[0m[1m@[0m[0m[1;31mlemon2ee[0m
+[0m[1;37m                  yyyyy- [0m[1;31m-yyyyyy+     [0m[1;31m OS:[0m Ubuntu 20.04 focal[0m
+[0m[1;37m               [0m[1;37m://+//////[0m[1;31m-yyyyyyo     [0m[1;31m Kernel:[0m x86_64 Linux 5.4.0-62-generic[0m
+[0m[1;33m           .++ [0m[1;37m.:/++++++/-[0m[1;31m.+sss/`     [0m[1;31m Uptime:[0m 16m[0m
+[0m[1;33m         .:++o:  [0m[1;37m/++++++++/:--:/-     [0m[1;31m Packages:[0m 598[0m
+[0m[1;33m        o:+o+:++.[0m[1;37m`..```.-/oo+++++/    [0m[1;31m Shell:[0m bash 5.0.17[0m
+[0m[1;33m       .:+o:+o/.[0m[1;37m          `+sssoo+/   [0m[1;31m Disk:[0m 6.2G / 22G (31%)[0m
+[0m[1;37m  .++/+:[0m[1;33m+oo+o:`[0m[1;37m             /sssooo.  [0m[1;31m CPU:[0m Intel Core i7-8850H @ 2x 2.592GHz[0m
+[0m[1;37m /+++//+:[0m[1;33m`oo+o[0m[1;37m               /::--:.  [0m[1;31m GPU:[0m VMware SVGA II Adapter[0m
+[0m[1;37m \+/+o+++[0m[1;33m`o++o[0m[1;31m               ++////.  [0m[1;31m RAM:[0m 566MiB / 3907MiB[0m
+[0m[1;37m  .++.o+[0m[1;33m++oo+:`[0m[1;31m             /dddhhh.  [0m
+[0m[1;33m       .+.o+oo:.[0m[1;31m          `oddhhhh+   [0m
+[0m[1;33m        \+.++o+o`[0m[1;31m`-````.:ohdhhhhh+    [0m
+[0m[1;33m         `:o+++ [0m[1;31m`ohhhhhhhhyo++os:     [0m
+[0m[1;33m           .o:[0m[1;31m`.syhhhhhhh/[0m[1;33m.oo++o`     [0m
+[0m[1;31m               /osyyyyyyo[0m[1;33m++ooo+++/    [0m
+[0m[1;31m                   ````` [0m[1;33m+oo+++o\:    [0m
+[0m[1;33m                          `oo++.      [0m

@@ -1,0 +1,55 @@
+#!/usr/bin/python3
+import argparse
+import random
+import linecache
+
+parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description = "Generate a secure, memoreable password using the XKCD method")
+parser.add_argument('-w', "--words", default=4, help='include WORDS words in the password (default=4)')
+parser.add_argument('-c', "--caps", default=0, help='capitalize the first letter of CAPS random words')
+parser.add_argument('-n', "--numbers", default=0, help='insert NUMBERS random numbers in the password')
+parser.add_argument('-s', "--symbols", default=0, help='insert NUMBERS random symbols in the password')
+args = parser.parse_args()
+
+
+def xkcd(words, caps, numbers, symbols):
+    """Generate a secure, memorable password using the XKCD method"""
+
+    symbols_list = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '.', ':', ';']
+    numbers_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+    sym_list = random.choices(symbols_list, k=symbols)
+    num_list = random.choices(numbers_list, k=numbers)
+
+    def random_lines():
+        return linecache.getline('words_alpha.txt', random.randrange(370103))
+
+    def random_insert(array, characters, no_of_reps):
+        for i in range(no_of_reps):
+            for character in characters:
+                random_index = random.randrange(len(array))
+                array = array[:random_index] + [character] + array[random_index:]
+        return array
+
+    def random_caps(los, cap_num):
+        if cap_num == 0:
+            return los
+        if cap_num == len(los):
+            return map(str.title, los)
+        else:
+            cap_words = random.sample(los, k=cap_num)
+            los_mod = list(set(los).difference(cap_words))
+            cap_words_final = map(str.title, cap_words)
+            final_los = random_insert(los_mod, cap_words_final, 1)
+            return random.sample(final_los, len(final_los))
+
+    def basic_password_generation(word_num, pw):
+        if word_num > 0:
+            return basic_password_generation(word_num - 1, pw + random_lines())
+        else:
+            return pw
+
+    print(''.join(random_insert(random_insert(random_caps(basic_password_generation(words, '').splitlines(), caps),
+                                              sym_list, 1), num_list, 1)))
+
+
+answer = xkcd(int(args.words), int(args.caps), int(args.numbers), int(args.symbols))

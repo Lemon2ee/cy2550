@@ -1,0 +1,10 @@
+chmod 555 /proc
+chmod 555 /sys
+chmod 755 /home/bob
+chmod 775 /home/bob/work
+chmod 4755 /bin/passwd
+chown root:root /usr/local/share/man
+chown root:root /var/log/opt
+chmod 755 /bin/adduser
+chmod 644 /home/alice/.profile
+chmod 776 /var/log/

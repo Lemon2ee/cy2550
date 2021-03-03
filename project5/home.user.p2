@@ -1,0 +1,15 @@
+# Last Modified: Wed Mar  3 06:24:39 2021
+#include <tunables/global>
+/home/lemon2ee/cy2550/project5/p2 {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+  deny /proc/{stat,meminfo} r,
+  deny /etc/{libao.conf,host.conf,profile,login.defs,nsswitch.conf,bash_completion,inputrc} r,
+  /etc/{hostid,timezone} r,
+  /proc/uptime rw,
+  /var/log/syslog rw,
+  /tmp/project* rw,
+  owner /home/*/.project2/config w,
+  owner /home/*/cy2550/project5/template r,
+}

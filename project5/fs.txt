@@ -4,7 +4,7 @@ chmod 755 /home/bob
 chmod 775 /home/bob/work
 chmod 4755 /bin/passwd
 chown root:root /usr/local/share/man
-chown root:root /var/log/opt
-chmod 755 /bin/adduser
+chown root:root /var/log/apt
+chmod 755 /sbin/adduser
 chmod 644 /home/alice/.profile
 chmod 776 /var/log/

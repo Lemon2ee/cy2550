@@ -1,0 +1,6 @@
+evilscript.php
+14/Apr/2019:12:36:19 -0000
+Apr 14 00:03:06
+/etc/shadow
+accounting-process
+/usr/bin/yes
